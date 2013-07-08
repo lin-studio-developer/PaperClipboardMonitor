@@ -329,6 +329,7 @@ namespace ClipboardMonitor
         private void Form1_Load(object sender, EventArgs e)
         {
             notifyIcon1.Text = this.Text;
+            //
         }
 
 	}
