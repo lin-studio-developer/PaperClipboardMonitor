@@ -166,7 +166,6 @@ namespace ClipboardMonitor
             this.chkRemoveReferences.TabIndex = 4;
             this.chkRemoveReferences.Text = "Auto help remove reference number (ex: [12]  [23, 24]  [1,2,5]  [45-47])";
             this.chkRemoveReferences.UseVisualStyleBackColor = true;
-            this.chkRemoveReferences.CheckedChanged += new System.EventHandler(this.chkRemoveReferences_CheckedChanged);
             // 
             // Form1
             // 
@@ -285,9 +284,6 @@ namespace ClipboardMonitor
 
                     if (!string.IsNullOrEmpty(dtData))
                     {
-
-                        //Console.WriteLine(dtData);
-
                         Clipboard.SetText(convertToPlainText(dtData));
                     }
                 }
@@ -335,9 +331,5 @@ namespace ClipboardMonitor
             notifyIcon1.Text = this.Text;
         }
 
-        private void chkRemoveReferences_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 	}
 }
